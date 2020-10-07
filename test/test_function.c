@@ -7,8 +7,8 @@
 
 /* Prototypes for all the test functions */
 void test_CheckBalance();
-void test_Deposit(int);
-void test_Withdraw(int);
+int test_Deposit(int);
+int test_Withdraw(int);
 
 
 /* Start of the application test */
@@ -38,7 +38,7 @@ int main() {
   return 0;
 }
 /* Write all the test functions */
-void test_Deposit(int) {
+int test_Deposit(int) {
   CU_ASSERT(1000 == Deposit(1000));
   CU_ASSERT(2000 == Deposit(2000));
   CU_ASSERT(3000== Deposit(3000));
@@ -49,7 +49,7 @@ void test_Deposit(int) {
   CU_ASSERT(50 == Deposit(500));
 }
 
-void test_Withdraw(int) {
+int test_Withdraw(int) {
   CU_ASSERT(700 == Withdraw(700));
   CU_ASSERT(300 == Withdraw(300));
   CU_ASSERT(200 == Withdraw(200));
