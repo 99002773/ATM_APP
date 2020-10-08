@@ -4,7 +4,7 @@ int main(void) {
     int choice;
     int deposit_amount=0;
     int withdraw_amount=0;
-		int dep_amount=0;
+    int dep_amount=0;
     int with_amount=0;
      while(1)
     {
@@ -28,7 +28,7 @@ int main(void) {
                              break;
         case 3: printf("Please enter your withdraw amount\n");
     						scanf("%d",&withdraw_amount);
-								with_amount=Withdraw();
+								with_amount=Withdraw(withdraw_amount);
 								printf("Your account balance \n");
     						printf("%d",amount);
                             break;
